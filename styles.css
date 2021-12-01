@@ -10,12 +10,15 @@
 
 .poultry-page-header-wrapper {
   background-color: rgba(0, 133, 124, 1);
-  height: 120px;
+  /* height: 120px; */
 }
 
+.poultry-page-inner-wrapper {
+  width: 1170px;
+  margin: auto;
+}
 .poultry-page-header {
   display: flex;
-  padding: 0 40px;
   justify-content: space-between;
   align-items: center;
   margin: auto;
@@ -30,10 +33,9 @@
 .poultry-page-subheader {
   display: flex;
   background-color: rgb(2, 30, 66);
-  height: 100px;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -43,6 +45,7 @@
   font-size: 22px;
   margin: 0;
   text-transform: uppercase;
+  padding: 20px;
 }
 
 .poultry-page-instructions {
@@ -64,16 +67,20 @@
   margin: auto;
   border-radius: 15px;
   overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .poultry-table-item-wrapper {
-  flex: 1;
   height: 400px;
   position: relative;
   padding: 0;
   background-size: contain;
   overflow: hidden;
   cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 234px;
 }
 
 .poultry-table-item-wrapper.poultry-table-item-1 {
@@ -91,16 +98,6 @@
 }
 .poultry-table-item-wrapper.poultry-table-item-5 {
   background-image: url('assets/images/poultry-item-img-5.jpg');
-}
-
-.poultry-table-item-wrapper:hover .poultry-table-item-header {
-  bottom: calc(100% - 60px);
-  background-color: rgba(0, 133, 124, 1);
-}
-
-.poultry-table-item-wrapper:hover .poultry-table-description-wrapper {
-  height: calc(100% - 60px);
-  top: 60px;
 }
 
 .poultry-table-item-header {
@@ -157,4 +154,67 @@
 .poultry-table-description-button:hover {
   color: rgba(0, 133, 124, 1);
   background-color: transparent;
+}
+
+/* Hover states */
+@media only screen and (min-width: 1024px) {
+  .poultry-table-item-wrapper:hover .poultry-table-item-header {
+    bottom: calc(100% - 60px);
+    background-color: rgba(0, 133, 124, 1);
+  }
+
+  .poultry-table-item-wrapper:hover .poultry-table-description-wrapper {
+    height: calc(100% - 60px);
+    top: 60px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .poultry-table-wrapper {
+    width: 95%;
+  }
+
+  .poultry-page-inner-wrapper {
+    width: 100%;
+  }
+
+  .poultry-page-header {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .timeline-page-header {
+    padding: 0 20px;
+  }
+  .poultry-page-header {
+    padding: 0 20px;
+  }
+  .poultry-page-title {
+    font-size: 30px;
+  }
+
+  .poultry-page-subtitle {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .poultry-page-title {
+    font-size: 25px;
+  }
+
+  .poultry-page-subtitle {
+    font-size: 18px;
+  }
+
+  .poultry-table-logo {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .poultry-table-item-wrapper {
+    width: 100%;
+  }
 }

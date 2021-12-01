@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Invention';
+  src: url('assets/fonts/Invention_Rg.ttf');
+}
+
+* {
+  font-family: 'Invention';
+  box-sizing: border-box;
+}
+
+.poultry-page-header-wrapper {
+  background-color: rgba(0, 133, 124, 1);
+  height: 120px;
+}
+
+.poultry-page-header {
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.poultry-page-title {
+  color: white;
+  font-weight: normal;
+  font-size: 45px;
+}
+
+.poultry-page-subheader {
+  display: flex;
+  background-color: rgb(2, 30, 66);
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.poultry-page-subtitle {
+  color: white;
+  font-weight: normal;
+  font-size: 22px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.poultry-page-instructions {
+  font-weight: bold;
+  font-size: 24px;
+  color: rgb(18, 133, 123);
+  text-align: center;
+  margin: 30px 0;
+}
+
+.poultry-table-logo {
+  height: 60px;
+  padding-left: 30px;
+}
+
+.poultry-table-wrapper {
+  display: flex;
+  width: 1170px;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.poultry-table-item-wrapper {
+  flex: 1;
+  height: 400px;
+  position: relative;
+  padding: 0;
+  background-size: contain;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.poultry-table-item-wrapper.poultry-table-item-1 {
+  background-image: url('assets/images/poultry-item-img-1.jpg');
+}
+
+.poultry-table-item-wrapper.poultry-table-item-2 {
+  background-image: url('assets/images/poultry-item-img-2.jpg');
+}
+.poultry-table-item-wrapper.poultry-table-item-3 {
+  background-image: url('assets/images/poultry-item-img-3.jpg');
+}
+.poultry-table-item-wrapper.poultry-table-item-4 {
+  background-image: url('assets/images/poultry-item-img-4.jpg');
+}
+.poultry-table-item-wrapper.poultry-table-item-5 {
+  background-image: url('assets/images/poultry-item-img-5.jpg');
+}
+
+.poultry-table-item-wrapper:hover .poultry-table-item-header {
+  bottom: calc(100% - 60px);
+  background-color: rgba(0, 133, 124, 1);
+}
+
+.poultry-table-item-wrapper:hover .poultry-table-description-wrapper {
+  height: calc(100% - 60px);
+  top: 60px;
+}
+
+.poultry-table-item-header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 133, 124, 0.85);
+  height: 60px;
+  padding: 0 10px;
+  bottom: 0;
+  transition: bottom ease 1s;
+}
+
+.poultry-table-item-header-text {
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+.poultry-table-description-wrapper {
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 60px);
+  background-color: white;
+  transition: height ease 1s, top ease 1s;
+  border-top: 6px solid rgb(2, 30, 66);
+}
+
+.poultry-table-description-button {
+  background-color: rgba(0, 133, 124, 1);
+  border: 3px solid rgba(0, 133, 124);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  position: absolute;
+  width: 180px;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: opacity 0.3s ease 1s, color 0.3s, background-color 0.3s;
+}
+
+.poultry-table-description-button:hover {
+  color: rgba(0, 133, 124, 1);
+  background-color: transparent;
+}

@@ -56,6 +56,15 @@
   margin: 40px 0;
 }
 
+.poultry-page-instructions-mobile {
+  font-weight: bold;
+  font-size: 24px;
+  color: rgb(18, 133, 123);
+  text-align: center;
+  margin: 40px 0;
+  display: none;
+}
+
 .poultry-table-logo {
   height: 60px;
   padding-left: 30px;
@@ -166,6 +175,16 @@
   .poultry-table-item-wrapper:hover .poultry-table-description-wrapper {
     height: calc(100% - 60px);
     top: 60px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .poultry-page-instructions {
+    display: none;
+  }
+
+  .poultry-page-instructions-mobile {
+    display: block;
   }
 }
 

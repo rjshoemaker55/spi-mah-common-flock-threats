@@ -120,7 +120,7 @@
   height: 60px;
   padding: 0 10px;
   bottom: 0;
-  transition: bottom ease 1s;
+  transition: bottom ease 1s, background-color ease 1s;
 }
 
 .poultry-table-item-header-text {

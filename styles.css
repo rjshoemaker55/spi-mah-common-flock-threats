@@ -52,19 +52,73 @@
   padding: 20px;
 }
 
+.poultry-intro {
+  text-align: left;
+  font-size: 18px;
+}
+
 .poultry-page-instructions {
   font-weight: bold;
   font-size: 24px;
   color: rgb(18, 133, 123);
   text-align: center;
-  margin: 40px 0;
+}
+
+.poultry-header {
+  font-size: 32px;
+  color: #37424a;
+  margin-top: 0px;
+}
+
+.poultry-page-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 50px auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.poultry-page-top-left-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 62.66%;
+}
+
+.topic-buttons-sidebar {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.topic-buttons-sidebar.sidebar-mobile {
+  display: none;
+  margin-top: 40px;
+}
+
+.topic-button-title {
+  color: #37424a;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.topic-buttons-wrapper.bottom {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .topic-button {
-  margin: 30px auto 0px auto;
   border: 0;
   border-radius: 4px;
-  display: inline-block;
+  display: inline;
   font-size: 14px;
   letter-spacing: 0;
   line-height: 14px;
@@ -76,10 +130,13 @@
   -webkit-user-select: none;
   vertical-align: middle;
   color: #00857c;
+  max-width: 282px;
+  line-height: 1;
 }
 
-.topic-button + .topic-button {
-  margin-left: 10px;
+.topic-button.teal-button {
+  background-color: rgb(18, 133, 123);
+  color: white;
 }
 
 .other-topic-button {
@@ -103,7 +160,6 @@
   font-size: 24px;
   color: rgb(18, 133, 123);
   text-align: center;
-  margin: 40px 0;
   display: none;
 }
 
@@ -123,7 +179,7 @@
 }
 
 .poultry-table-item-wrapper {
-  height: 400px;
+  height: 300px;
   position: relative;
   padding: 0;
   background-size: contain;
@@ -185,6 +241,10 @@
   border-top: 6px solid rgb(2, 30, 66);
 }
 
+.poultry-table-description-text {
+  font-size: 13px;
+}
+
 .poultry-table-description-button {
   background-color: rgba(0, 133, 124, 1);
   border: 3px solid rgba(0, 133, 124);
@@ -219,6 +279,25 @@
   .poultry-table-item-wrapper:hover .poultry-table-description-wrapper {
     height: calc(100% - 60px);
     top: 60px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .poultry-page-top-left-wrapper {
+    flex-basis: 100%;
+  }
+
+  .topic-buttons-wrapper.bottom {
+    justify-content: center;
+  }
+
+  .topic-buttons-sidebar.sidebar-desktop {
+    display: none;
+  }
+
+  .topic-buttons-sidebar.sidebar-mobile {
+    display: flex;
+    flex-basis: 100%;
   }
 }
 
